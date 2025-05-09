@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "outDir": "dist",
+      "target": "es2018",
+      "module": "esnext",
+      "baseUrl": ".",
+      "sourceMap": false,
+      "moduleResolution": "node",
+      "allowJs": false,
+      "strict": true,
+      "noUnusedLocals": true,
+      "resolveJsonModule": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "removeComments": false,
+      "rootDir": ".",
+      "types": [],
+      "paths": {
+        "@neue-plus/components": ["packages/components"],
+        "@neue-plus/components/*": ["packages/components/*"],
+        "@neue-plus/utils": ["packages/utils"],
+        "@neue-plus/utils/*": ["packages/utils/*"],
+        "@neue-plus/hooks": ["packages/hooks"],
+        // "@neue-plus/directives": ["packages/directives"],
+        "@neue-plus/constants": ["packages/constants"],
+        // "@neue-plus/locale": ["packages/locale"],
+        // "@neue-plus/locale/*": ["packages/locale/*"],
+        "neue-plus": ["packages/neue-plus"]
+      },
+      "preserveSymlinks": true
+    }
+  }

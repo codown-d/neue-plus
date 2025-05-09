@@ -1,0 +1,5 @@
+export const PKG_PREFIX = '@neue-plus'
+export const PKG_NAME = 'neue-plus'
+export const PKG_CAMELCASE_NAME = 'NeuePlus'
+export const PKG_CAMELCASE_LOCAL_NAME = 'NeuePlusLocale'
+export const PKG_BRAND_NAME = 'Neue Plus'

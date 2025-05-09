@@ -1,0 +1,6 @@
+{
+    "vue.features.scriptSetupSyntax": true,
+    "volar.takeOverMode.enabled": true,
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
+  

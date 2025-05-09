@@ -1,0 +1,38 @@
+{
+  "name": "neue-plus",
+  "version": "1.0.0",
+  "description": "A Vue 3 Component Library",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "types": "es/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./es/index.mjs",
+      "require": "./lib/index.js",
+      "types": "./es/index.d.ts"
+    }
+  },
+  "style": "dist/index.css",
+  "sideEffects": [
+    "dist/*",
+    "*.css",
+    "*.scss"
+  ],
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vue": "^3.2.0"
+  },
+  "files": [
+    "es",
+    "lib",
+    "dist"
+  ],
+  "browserslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all"
+  ]
+}

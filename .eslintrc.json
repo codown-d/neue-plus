@@ -1,0 +1,4 @@
+{
+    "root": true,
+    "extends": ["@neue-plus/eslint-config"]
+  }
