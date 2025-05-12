@@ -1,7 +1,7 @@
 import { INSTALLED_KEY } from '@neue-plus/constants'
 import { version } from './version'
 
-import type { Plugin } from 'vue'
+import type { Plugin } from '@vue/runtime-core'
 // import type { ConfigProviderContext } from '@neue-plus/components/config-provider'
 
 export const makeInstaller = (components: Plugin[] = []) => {

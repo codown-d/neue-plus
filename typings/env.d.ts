@@ -1,4 +1,4 @@
-import type { vShow } from 'vue'
+import type { vShow } from '@vue/runtime-core'
 import type { INSTALLED_KEY } from '@neue-plus/constants'
 
 declare global {

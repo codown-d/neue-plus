@@ -1,5 +1,5 @@
 import { cardProps } from "element-plus";
-import { ExtractPropTypes } from "vue";
+import { ExtractPropTypes } from "@vue/runtime-core";
 
 export const neCardProps = {
   ...cardProps,

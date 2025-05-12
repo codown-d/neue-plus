@@ -2,4 +2,3 @@
 export * from './vue/index'
 export * from './error'
 export * from './functions'
-export * from './neue-plus-resolver'

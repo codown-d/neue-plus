@@ -7,5 +7,7 @@
 import { ElButton } from 'element-plus'
 import { neButtonProps } from './type'
 const props = defineProps(neButtonProps)
-
+defineOptions({
+  name: 'NeButton',
+})
 </script>

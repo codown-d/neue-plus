@@ -9,5 +9,8 @@ import { ElCard } from 'element-plus'
 import { neCardProps } from './type'
 // 定义 props
 const props = defineProps(neCardProps)
+defineOptions({
+  name: 'NeCard',
+})
 </script>
 

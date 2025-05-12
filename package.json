@@ -30,23 +30,36 @@
     "vue": "^3.2.0"
   },
   "dependencies": {
-    "vite-plugin-vue-devtools": "^7.7.2"
-  },
-  "devDependencies": {
-    "@changesets/cli": "^2.29.3",
     "@element-plus/icons-vue": "^2.3.1",
     "@neue-plus/components": "workspace:*",
     "@neue-plus/constants": "workspace:*",
     "@neue-plus/directives": "workspace:*",
     "@neue-plus/hooks": "workspace:*",
+    "@neue-plus/resolver": "workspace:*",
     "@neue-plus/theme-chalk": "workspace:*",
     "@neue-plus/utils": "workspace:*",
-    "concurrently": "^7.2.2",
+    "@vue/shared": "3.5.13",
+    "dayjs": "^1.11.13",
     "element-plus": "^2.9.9",
+    "lodash-es": "^4.17.21",
+    "lodash-unified": "1.0.3"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.3",
+    "@types/lodash-es": "4.17.12",
+    "@types/node": "22.15.17",
+    "@vue/runtime-core": "3.5.13",
+    "concurrently": "^7.2.2",
     "husky": "^9.1.7",
+    "rimraf": "6.0.1",
+    "sass": "^1.79.3",
+    "tsx": "^4.19.3",
     "typescript": "~5.8.0",
+    "unplugin-vue-macros": "^0.11.2",
     "vite": "^6.2.5",
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "vue": "^3.2.37",
+    "vue-tsc": "^2.0.28"
   },
   "engines": {
     "node": ">=18.0.0"

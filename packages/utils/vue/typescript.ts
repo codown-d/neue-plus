@@ -1,4 +1,4 @@
-import type { AppContext, EmitsOptions, Plugin, SetupContext } from 'vue'
+import type { AppContext, EmitsOptions, Plugin, SetupContext } from '@vue/runtime-core'
 
 export type SFCWithInstall<T> = T & Plugin
 

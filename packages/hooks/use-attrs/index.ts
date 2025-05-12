@@ -1,8 +1,8 @@
-import { computed, getCurrentInstance } from 'vue'
-import { fromPairs } from 'lodash-unified'
+import { computed, getCurrentInstance } from '@vue/runtime-core'
+import { fromPairs } from 'lodash-es'
 import { debugWarn } from '@neue-plus/utils'
 
-import type { ComputedRef } from 'vue'
+import type { ComputedRef } from '@vue/runtime-core'
 
 interface Params {
   excludeListeners?: boolean
