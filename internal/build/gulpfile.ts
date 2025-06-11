@@ -7,7 +7,7 @@ import {
   epOutput,
   epPackage,
   projRoot,
-} from '@element-plus/build-utils'
+} from '@neue-plus/build-utils'
 import { buildConfig, run, runTask, withTaskName } from './src'
 import type { TaskFunction } from 'gulp'
 import type { Module } from './src'
@@ -59,11 +59,11 @@ export const copyTypesToSource: TaskFunction = async () => {
   try {
     let content = await readFile(localesFile, 'utf8')
     content = content.replace(
-      /export \* from 'element-plus\/es\/locale';?/,
+      /export \* from 'neue-plus\/es\/locale';?/,
       "export * from './locale';"
     )
     await writeFile(localesFile, content, 'utf8')
-  } catch (e) {
+  } catch {
     // File might not exist, ignore
   }
 
@@ -78,16 +78,16 @@ export const copyTypesToSource: TaskFunction = async () => {
       let content = await readFile(file, 'utf8')
       // Fix theme-chalk imports
       content = content.replace(
-        /import 'element-plus\/theme-chalk\/(src\/)?([^']+)';?/g,
-        "import '@element-plus/theme-chalk/$1$2';"
+        /import 'neue-plus\/theme-chalk\/(src\/)?([^']+)';?/g,
+        "import '@neue-plus/theme-chalk/$1$2';"
       )
       // Fix specific el-base.css import
       content = content.replace(
-        /import 'element-plus\/theme-chalk\/el-base\.css';?/g,
-        "import '@element-plus/theme-chalk/base.css';"
+        /import 'neue-plus\/theme-chalk\/el-base\.css';?/g,
+        "import '@neue-plus/theme-chalk/base.css';"
       )
       await writeFile(file, content, 'utf8')
-    } catch (e) {
+    } catch {
       // File might not exist, ignore
     }
   }
@@ -103,21 +103,21 @@ export const copyTypesToSource: TaskFunction = async () => {
       let content = await readFile(file, 'utf8')
       // Fix base component imports
       content = content.replace(
-        /import 'element-plus\/es\/components\/base\/style(\/css)?';?/g,
-        "import '@element-plus/components/base/style$1';"
+        /import 'neue-plus\/es\/components\/base\/style(\/css)?';?/g,
+        "import '@neue-plus/components/base/style$1';"
       )
       // Fix theme-chalk imports
       content = content.replace(
-        /import 'element-plus\/theme-chalk\/(src\/)?([^']+)';?/g,
-        "import '@element-plus/theme-chalk/$1$2';"
+        /import 'neue-plus\/theme-chalk\/(src\/)?([^']+)';?/g,
+        "import '@neue-plus/theme-chalk/$1$2';"
       )
       // Fix specific el-card.css import
       content = content.replace(
-        /import 'element-plus\/theme-chalk\/el-card\.css';?/g,
-        "import '@element-plus/theme-chalk/el-card.css';"
+        /import 'neue-plus\/theme-chalk\/el-card\.css';?/g,
+        "import '@neue-plus/theme-chalk/el-card.css';"
       )
       await writeFile(file, content, 'utf8')
-    } catch (e) {
+    } catch {
       // File might not exist, ignore
     }
   }

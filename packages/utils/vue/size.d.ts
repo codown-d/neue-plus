@@ -1,2 +1,3 @@
-import type { ComponentSize } from 'element-plus/es/constants';
-export declare const getComponentSize: (size?: ComponentSize) => 40 | 32 | 24;
+import type { ComponentSize } from 'neue-plus/es/constants'
+
+export declare const getComponentSize: (size?: ComponentSize) => 40 | 32 | 24

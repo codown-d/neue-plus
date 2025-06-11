@@ -14,7 +14,7 @@ import {
   getPackageDependencies,
   pkgRoot,
   projRoot,
-} from '@element-plus/build-utils'
+} from '@neue-plus/build-utils'
 
 export default defineConfig(async ({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
@@ -36,11 +36,11 @@ export default defineConfig(async ({ mode }) => {
     resolve: {
       alias: [
         {
-          find: /^element-plus(\/(es|lib))?$/,
+          find: /^neue-plus(\/(es|lib))?$/,
           replacement: path.resolve(epRoot, 'index.ts'),
         },
         {
-          find: /^element-plus\/(es|lib)\/(.*)$/,
+          find: /^neue-plus\/(es|lib)\/(.*)$/,
           replacement: `${pkgRoot}/$2`,
         },
       ],

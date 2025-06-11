@@ -1,4 +1,4 @@
-import { INSTALLED_KEY } from '@element-plus/constants'
+import { INSTALLED_KEY } from '@neue-plus/constants'
 import { version } from './version'
 
 import type { App, Plugin } from 'vue'

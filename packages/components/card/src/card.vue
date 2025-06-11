@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@neue-plus/hooks'
 import { cardProps } from './card'
 
 defineOptions({

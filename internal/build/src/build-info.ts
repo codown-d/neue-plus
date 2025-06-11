@@ -1,11 +1,11 @@
 import path from 'path'
-import { PKG_NAME } from '@element-plus/build-constants'
-import { epOutput } from '@element-plus/build-utils'
+import { PKG_NAME } from '@neue-plus/build-constants'
+import { epOutput } from '@neue-plus/build-utils'
 
 import type { ModuleFormat } from 'rollup'
 
 export const modules = ['esm', 'cjs'] as const
-export type Module = typeof modules[number]
+export type Module = (typeof modules)[number]
 export interface BuildInfo {
   module: 'ESNext' | 'CommonJS'
   format: ModuleFormat
@@ -13,12 +13,12 @@ export interface BuildInfo {
   output: {
     /** e.g: `es` */
     name: string
-    /** e.g: `dist/element-plus/es` */
+    /** e.g: `dist/neue-plus/es` */
     path: string
   }
 
   bundle: {
-    /** e.g: `element-plus/es` */
+    /** e.g: `neue-plus/es` */
     path: string
   }
 }

@@ -1,6 +1,6 @@
 import consola from 'consola'
 import chalk from 'chalk'
-import { errorAndExit, getWorkspacePackages } from '@element-plus/build-utils'
+import { errorAndExit, getWorkspacePackages } from '@neue-plus/build-utils'
 import type { Project } from '@pnpm/find-workspace-packages'
 
 async function main() {
@@ -18,13 +18,13 @@ async function main() {
   consola.log(chalk.cyan(`$TAG_VERSION: ${tagVersion}`))
   consola.log(chalk.cyan(`$GIT_HEAD: ${gitHead}`))
 
-  consola.debug(chalk.yellow(`Updating package.json for element-plus`))
+  consola.debug(chalk.yellow(`Updating package.json for neue-plus`))
 
   const pkgs = Object.fromEntries(
     (await getWorkspacePackages()).map((pkg) => [pkg.manifest.name!, pkg])
   )
-  const elementPlus = pkgs['element-plus'] || pkgs['@element-plus/nightly']
-  const eslintConfig = pkgs['@element-plus/eslint-config']
+  const elementPlus = pkgs['neue-plus'] || pkgs['@neue-plus/nightly']
+  const eslintConfig = pkgs['@neue-plus/eslint-config']
 
   const writeVersion = async (project: Project) => {
     await project.writeProjectManifest({

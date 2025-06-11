@@ -4,12 +4,12 @@ import ts from 'typescript'
 import glob from 'fast-glob'
 import { copy, remove } from 'fs-extra'
 import { Extractor, ExtractorConfig } from '@microsoft/api-extractor'
-import { buildOutput, epRoot, projRoot } from '@element-plus/build-utils'
+import { buildOutput, epRoot, projRoot } from '@neue-plus/build-utils'
 import { pathRewriter, run } from '../utils'
 
 export const generateTypesDefinitions = async () => {
   const typesDir = path.join(buildOutput, 'types', 'packages')
-  const entryDir = path.join(typesDir, 'element-plus')
+  const entryDir = path.join(typesDir, 'neue-plus')
   const entryFilePath = path.join(entryDir, 'index.d.ts')
   const tsDir = path.join(projRoot, 'node_modules', 'typescript')
   const tsConfigPath = path.join(projRoot, 'tsconfig.web.json')
@@ -43,8 +43,8 @@ export const generateTypesDefinitions = async () => {
           compilerOptions: {
             lib: tsConfig.config.compilerOptions.lib,
             paths: {
-              'element-plus': [entryFilePath],
-              '@element-plus/*': [`${typesDir}/*`],
+              'neue-plus': [entryFilePath],
+              '@neue-plus/*': [`${typesDir}/*`],
             },
             skipLibCheck: true,
           },
@@ -71,7 +71,6 @@ export const generateTypesDefinitions = async () => {
 
   await writeFile(entryFilePath, formattedText, 'utf8')
 
-  // "@element-plus" should be replaced with "element-plus"
   const filePaths = await glob(`**/*.d.ts`, {
     cwd: typesDir,
     absolute: true,

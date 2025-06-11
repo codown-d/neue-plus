@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["Element Plus", "element-plus", "vnode"],
+  "cSpell.words": ["Element Plus", "neue-plus", "neue", "vnode"],
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {

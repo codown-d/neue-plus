@@ -1,9 +1,9 @@
 import installer from './defaults'
 
-export * from '@element-plus/components'
-export * from '@element-plus/constants'
-export * from '@element-plus/directives'
-export * from '@element-plus/hooks'
+export * from '@neue-plus/components'
+export * from '@neue-plus/constants'
+export * from '@neue-plus/directives'
+export * from '@neue-plus/hooks'
 export * from './make-installer'
 
 export const install = installer.install

@@ -1,33 +1,24 @@
 {
-  "name": "@element-plus/theme-chalk",
+  "name": "@neue-plus/theme-chalk",
   "version": "0.1.0",
   "description": "Element component chalk theme.",
   "keywords": [
     "vue-components",
-    "element-plus",
     "theme-chalk",
     "theme-light"
   ],
-  "homepage": "https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/README.md",
-  "bugs": {
-    "url": "https://github.com/element-plus/element-plus#issues"
-  },
   "license": "MIT",
   "author": "yi.shyang@ele.me",
   "main": "index.css",
   "unpkg": "index.css",
   "jsdelivr": "index.css",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/element-plus/element-plus.git"
-  },
   "style": "index.css",
   "scripts": {
     "clean": "rimraf dist",
     "build": "gulp --require tsx/dist/loader.cjs"
   },
   "devDependencies": {
-    "@element-plus/build": "workspace:*",
+    "@neue-plus/build": "workspace:*",
     "@types/gulp-autoprefixer": "^0.0.33",
     "@types/gulp-rename": "^2.0.1",
     "@types/gulp-sass": "^5.0.0",

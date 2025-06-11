@@ -1,4 +1,4 @@
-import { buildProps, definePropType } from '@element-plus/utils'
+import { buildProps, definePropType } from '@neue-plus/utils'
 import type { ExtractPropTypes, StyleValue } from 'vue'
 
 export const cardProps = buildProps({

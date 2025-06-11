@@ -1,5 +1,5 @@
 // Only Card component is kept in this simplified version
-import { ElCard } from '@element-plus/components/card'
+import { ElCard } from '@neue-plus/components/card'
 
 import type { Plugin } from 'vue'
 

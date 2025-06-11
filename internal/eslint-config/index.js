@@ -251,7 +251,7 @@ module.exports = defineConfig({
             position: 'before',
           },
           {
-            pattern: '@element-plus/**',
+            pattern: '@neue-plus/**',
             group: 'internal',
           },
         ],
